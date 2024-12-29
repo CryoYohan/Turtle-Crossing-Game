@@ -6,7 +6,7 @@ class CarManager:
         # Declare variables
         self.COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
         self.STARTING_MOVE_DISTANCE = 5
-        self.MOVE_INCREMENT = 10
+        self.MOVE_INCREMENT = 5
         self.car_speed = self.STARTING_MOVE_DISTANCE
         self.all_cars = []
 
@@ -32,9 +32,9 @@ class CarManager:
         # Increase cars movement speed
         self.car_speed += self.MOVE_INCREMENT
 
-    def remove_cars(self):
-        # Remove all cars from GUI
-        self.all_cars.clear()
+    def restart(self):
+        # Revert back to normal speed of cars
+        self.car_speed = self.STARTING_MOVE_DISTANCE
 
 
 

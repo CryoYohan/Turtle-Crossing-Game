@@ -6,6 +6,8 @@ class Scoreboard:
         self.score = 1
         self.FONT = ("Courier", 24, "normal")
         self.level = Turtle()
+        self.game_over_text = Turtle()
+        self.game_over_text.hideturtle()
         self.level.penup()
         self.level.hideturtle()
         self.level.goto(-220, 250)
@@ -21,6 +23,10 @@ class Scoreboard:
         self.score += 1
 
     def game_over(self):
-        game_over_text = Turtle()
-        game_over_text.hideturtle()
-        game_over_text.write('GAME OVER', align='center', font=self.FONT)
+        self.game_over_text.write('GAME OVER', align='center', font=self.FONT)
+
+    def restart(self):
+        self.game_over_text.clear()
+        self.score = 1
+
+

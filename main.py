@@ -31,8 +31,11 @@ class Main:
     def restart(self):
         # Restarts the game
         print('Restart')
-        self.screen.clear()
         self.game_is_on = True
+        self.scoreboard.restart()
+        self.scoreboard.update_level()
+        self.car_manager.restart()
+        self.player.go_to_start()
         self.run()
 
     def end(self):
