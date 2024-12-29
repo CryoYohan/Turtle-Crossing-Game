@@ -5,7 +5,7 @@
 This repository contains a fun and interactive game built using Python's Turtle module. Players control a turtle as it crosses a busy road, dodging incoming cars to reach the other side safely.
 
 #### Features:
-- **Controls**: Use the UP arrow key to move the turtle forward.  
+- **Controls**: Use the UP arrow key to move the turtle forward. RETURN key to restart. ESC key to quit.  
 - **Dynamic Gameplay**: Dodge cars that move horizontally across the screen.  
 - **Increasing Difficulty**: With every level, the speed of the cars increases, adding an exciting challenge.  
 
